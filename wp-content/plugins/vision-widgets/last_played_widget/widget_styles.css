@@ -1,0 +1,18 @@
+div.searchOptions {
+	display: none;
+}
+
+div.lastPlayedWrapper {
+	background: #eee;
+	padding: 20px;
+	height: 200px;
+}
+
+div.inner {
+	overflow: scroll;
+	height: 160px;
+}
+
+select.tzSelect {
+	display: none;
+}

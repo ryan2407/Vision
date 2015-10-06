@@ -1,0 +1,191 @@
+@media @phone {
+  div.container {
+    width: 90%;
+  }
+
+  div.global {
+
+    ul li a {
+      font-size: 12px;
+    }
+
+    form {
+      width: 60%;
+      float: left;
+
+      input[name=search] {
+        width: 80%;
+      }
+
+      input[type=submit] {
+        width: 20%;
+      }
+    }
+
+    div.donate {
+      width: 30%;
+      float: left;
+
+      img {
+        width: 100%;
+      }
+
+
+    }
+
+    div.mobileNavIcon {
+      display: block !important;
+      width: 10%;
+      float: left;
+      padding: 0 10px;
+      height: 39px;
+      background: url("images/mobile-nav-icon.png") #616061;
+      background-size: 50%;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    div.mobileNavIcon:hover {
+      cursor: pointer;
+    }
+
+    div.left {
+      width: 30%;
+
+      ul li {
+        width: 100%;
+        text-align: center;
+      }
+    }
+
+    div.right {
+      width: 70%;
+    }
+  }
+
+  div.tag {
+    display: none;
+  }
+
+  div.header {
+    div.navWrapper {
+      width: 90%;
+      display: table;
+      position: absolute;
+      z-index: 2000;
+      background: @mediaBase;
+      left: -100%;
+
+      div.nav {
+        display: table-footer-group;
+      }
+      div.subnav {
+        display: table-header-group;
+
+        ul {
+          padding-left: 0px;
+        }
+      }
+    }
+  }
+
+  div.nav {
+    ul li {
+      display: block;
+      width: 100% !important;
+    }
+  }
+
+  div.subnav {
+    ul li {
+      display: block;
+    }
+    ul li:after {
+      content: "" !important;
+      padding: 0;
+      margin: 0;
+    }
+
+    ul li a {
+      display: block;
+      background: svg-gradient(to bottom, lighten(@mediaBase, 20%), @mediaBase);
+      padding: 10px !important;
+    }
+  }
+
+  div.slideText {
+    width: 70% !important;
+  }
+
+  div.logo {
+    width: 100% !important;
+  }
+
+  div.mainWidgetArea div.columns {
+    width: 100%;
+  }
+
+  div.mainContent {
+    div.primary {
+      width: 100%;
+    }
+
+    div.secondary {
+      width: 100%;
+    }
+  }
+
+  div.donateFooter {
+    text-align: center;
+
+    img {
+      margin-right: 0px;
+    }
+
+    p {
+      text-align: center;
+    }
+  }
+
+  div.footerLogo {
+    width: 100% !important;
+  }
+
+  div.footer {
+    div.footerColumn {
+      width: 100% !important;
+      margin: 0;
+    }
+
+    div.footerForm {
+      position: relative;
+      overflow: hidden;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+    }
+
+    div.footerSection {
+      h3 {
+        margin-bottom: 20px;
+      }
+
+      h3:before {
+        content: "+ ";
+      }
+
+      h3:hover {
+        cursor: pointer;
+        color: fadeout(#fff, 50%);
+      }
+
+      ul {
+        display: none;
+      }
+    }
+  }
+}
+
+div.ui-loader {
+  display: none;
+}

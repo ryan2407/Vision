@@ -1,0 +1,9 @@
+div.wrapper {
+	background: #f4f4f4;
+	padding: 20px;
+	height: auto;
+}
+
+div.inner {
+	overflow: hidden;
+}

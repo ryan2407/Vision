@@ -1,0 +1,10 @@
+{
+    "require": {
+        "geoip2/geoip2": "^2.3"
+    },
+    "autoload": {
+      "psr-4": {
+        "VisionGeoip\\": ""
+      }
+    }
+}

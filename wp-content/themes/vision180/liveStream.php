@@ -28,6 +28,10 @@
                     $('audio.audio').prop('volume', (ui.value / 100));
                 }
             });
+     
+			$('.stationChange').on('click', function(){
+				$('.stationSelect').slideToggle();
+			});
 		});
 	</script>
 </head>
@@ -36,10 +40,16 @@
 	<div class="mediaPlayer">
 		
 		<div class="mediaTopBar">
-			<h3>CHANGE STATION</h3>
+			<h3 class="stationChange">CHANGE STATION</h3>
 			<img src="<?php echo bloginfo('template_directory'); ?>/images/donate-green.png">
 			<div style="clear: both;"></div>
 		</div>
+		
+		<div class="stationSelect" style="display: none;width: 100%;">
+				<a href="http://dev.vision.org.au/vision180/vision-180-live-stream/">Vision 180</a>
+				<a href="http://dev.vision.org.au/christian-radio/vision-christian-radio-stream/">Vision Radio</a>
+				<div style="clear:both;"></div>
+			</div>
 		
 		<div class="mediaLogo">
 			<img src="<?php echo bloginfo('template_directory'); ?>/images/vision-logo.png" width="40%">
@@ -52,11 +62,10 @@
 			<a href="#" class="stop">
 				<img src="<?php echo bloginfo('template_directory'); ?>/images/stop.png">
 			</a>
-<!--
-			<a href="#" class="pause">
+			<a href="#" class="pause" style="display: none;">
 				<img src="<?php echo bloginfo('template_directory'); ?>/images/pause.png">
 			</a>
--->
+
 		</div>
 		
 		<div class="nowPlayingPlayer">

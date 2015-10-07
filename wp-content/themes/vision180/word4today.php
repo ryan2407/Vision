@@ -38,7 +38,37 @@
 			<?php endif; ?>
 		</div><!-- end primary -->
 
+		<div class="secondary">
+			
+			<?php $dateObj = new DateTime('now'); ?>
+			<h2><strong><?php echo $dateObj->format('D'); ?></strong> <?php echo $dateObj->format('d F, Y'); ?></h2>			
+			
+			<hr>
+			
+			<div class="dateMeta meta">
+				
+				<img src="<?php echo bloginfo('template_directory'); ?>/images/calendar-icon.jpg" width="45">
+				<h2><strong>CALENDAR</strong><br>Select a specific day</h2>
+			</div>
+		</div>
+
 		<?php get_template_part('sidebar'); ?>
+		
+		<div style="clear:both;"></div>
+		
+		<div class="secondary">
+						
+			<hr>
+			
+			<div class="mailMeta meta">
+				
+				<img src="<?php echo bloginfo('template_directory'); ?>/images/mail-icon.jpg" width="45">
+				<h2><strong>SIGN UP</strong><br><span style="font-size: 95%;">Email or print subscriptions</span></h2>
+				<div class="signupForm">
+					<?php echo do_shortcode('[gravityform id="5" title=false description=false ajax=true]'); ?>
+				</div>
+			</div>
+		</div>
 		<div style="clear:both"></div>
 	</div>
 

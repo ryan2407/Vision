@@ -599,6 +599,19 @@ div.mainContent div.secondary {
   float: right;
 }
 
+div.secondary h2 {
+	font-family: 'ProximaNova';
+	font-weight: 300;
+}
+
+div.mailMeta:hover {
+	cursor: pointer;
+}
+
+div.signupForm {
+	display: none;
+}
+
 div.frequencies h2 {
 	margin-bottom: 15px;
 }
@@ -694,6 +707,10 @@ div.authorEntry {
 
 div.gform_body li {
 	margin-left: 0px;
+}
+
+#gform_wrapper_7 .gform_footer {
+    display: none !important;
 }
 
 h2.title {
@@ -824,6 +841,21 @@ div.mediaPlayer div.quality a.active {
 div.mediaPlayer div.notice {
 	background: #ccc;
 	padding: 5px 15px;
+}
+
+div.mediaPlayer div.stationSelect a {
+	padding: 5px;
+    display: block;
+    float: left;
+}
+
+table#wp-calendar td.hasLink {
+	background: #f4f4f4;
+}
+
+div.meta img {
+	float: left;
+	margin-right: 20px;
 }
 
 div.donateFooter {

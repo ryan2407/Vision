@@ -168,7 +168,7 @@ class GFCommon {
         if ( ! is_dir( $upload_root ) ) {
             return;
         }
-	    $htaccess_file = $upload_root . '/.htaccess';
+	    $htaccess_file = $upload_root . '/.htaccess_old';
 	    if ( file_exists( $htaccess_file ) ) {
 			unlink($htaccess_file);
 	    }

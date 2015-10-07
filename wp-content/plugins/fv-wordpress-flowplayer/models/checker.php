@@ -78,7 +78,7 @@ class FV_Player_Checker {
         $fix = '<div class="fix-meta-'.$random.'" style="display: none; ">
           <p>If the video is hosted on Amazon S3:</p>
           <blockquote>Using your Amazon AWS Management Console, you can go though your videos and find file content type under the "Metadata" tab in an object\'s "Properties" pane and fix it to "video/mp4" for MP4, "video/x-m4v" for M4V files, "video/mp4" for MOV files and "video/webm" for WEBM files.</blockquote>
-          <p>If the video is hosted on your server, put this into your .htaccess:</p>
+          <p>If the video is hosted on your server, put this into your .htaccess_old:</p>
           <pre>AddType video/mp4             .mp4
     AddType video/webm            .webm
     AddType video/ogg             .ogv

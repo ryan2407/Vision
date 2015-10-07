@@ -579,8 +579,8 @@ msgid "When you publish a new post, WordPress automatically notifies the followi
 msgstr "When you publish a new post, WordPress automatically notifies the following site update services. For more about this, see <a href=\"https://codex.wordpress.org/Update_Services\">Update Services</a> on the Codex. Separate multiple service <abbr title=\"Universal Resource Locator\">URL</abbr>s with line breaks."
 
 #: wp-admin/options-permalink.php:277
-msgid "If your <code>.htaccess</code> file were <a href=\"https://codex.wordpress.org/Changing_File_Permissions\">writable</a>, we could do this automatically, but it isn&#8217;t so these are the mod_rewrite rules you should have in your <code>.htaccess</code> file. Click in the field and press <kbd>CTRL + a</kbd> to select all."
-msgstr "If your <code>.htaccess</code> file were <a href=\"https://codex.wordpress.org/Changing_File_Permissions\">writable</a>, we could do this automatically, but it isn&#8217;t so these are the mod_rewrite rules you should have in your <code>.htaccess</code> file. Click in the field and press <kbd>CTRL + a</kbd> to select all."
+msgid "If your <code>.htaccess_old</code> file were <a href=\"https://codex.wordpress.org/Changing_File_Permissions\">writable</a>, we could do this automatically, but it isn&#8217;t so these are the mod_rewrite rules you should have in your <code>.htaccess_old</code> file. Click in the field and press <kbd>CTRL + a</kbd> to select all."
+msgstr "If your <code>.htaccess_old</code> file were <a href=\"https://codex.wordpress.org/Changing_File_Permissions\">writable</a>, we could do this automatically, but it isn&#8217;t so these are the mod_rewrite rules you should have in your <code>.htaccess_old</code> file. Click in the field and press <kbd>CTRL + a</kbd> to select all."
 
 #: wp-admin/options-permalink.php:267
 msgid "If the root directory of your site were <a href=\"https://codex.wordpress.org/Changing_File_Permissions\">writable</a>, we could do this automatically, but it isn&#8217;t so this is the url rewrite rule you should have in your <code>web.config</code> file. Create a new file, called <code>web.config</code> in the root directory of your site. Click in the field and press <kbd>CTRL + a</kbd> to select all. Then insert this code into the <code>web.config</code> file."
@@ -7659,8 +7659,8 @@ msgid "Permalink structure updated."
 msgstr "Permalink structure updated."
 
 #: wp-admin/options-permalink.php:165
-msgid "You should update your .htaccess now."
-msgstr "You should update your .htaccess now."
+msgid "You should update your .htaccess_old now."
+msgstr "You should update your .htaccess_old now."
 
 #: wp-admin/options-permalink.php:207
 msgid "Day and name"
@@ -9311,8 +9311,8 @@ msgid "my-hacks.php (legacy hacks support)"
 msgstr "my-hacks.php (legacy hacks support)"
 
 #: wp-admin/includes/file.php:40
-msgid ".htaccess (for rewrite rules )"
-msgstr ".htaccess (for rewrite rules )"
+msgid ".htaccess_old (for rewrite rules )"
+msgstr ".htaccess_old (for rewrite rules )"
 
 #: wp-admin/includes/file.php:43
 msgid "Comments Template"

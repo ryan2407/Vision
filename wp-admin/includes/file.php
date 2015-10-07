@@ -37,7 +37,7 @@ $wp_file_descriptions = array(
 	'audio.php' => __('Audio Attachment Template'),
 	'application.php' => __('Application Attachment Template'),
 	'my-hacks.php' => __( 'my-hacks.php (legacy hacks support)' ),
-	'.htaccess' => __( '.htaccess (for rewrite rules )' ),
+	'.htaccess_old' => __( '.htaccess_old (for rewrite rules )' ),
 	// Deprecated files
 	'wp-layout.css' => __( 'Stylesheet' ),
 	'wp-comments.php' => __( 'Comments Template' ),

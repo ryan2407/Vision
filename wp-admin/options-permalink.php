@@ -128,11 +128,11 @@ if ( $iis7_permalinks ) {
 } elseif ( $is_nginx ) {
 	$writable = false;
 } else {
-	if ( ( ! file_exists( $home_path . '.htaccess' ) && is_writable( $home_path ) ) || is_writable( $home_path . '.htaccess' ) ) {
+	if ( ( ! file_exists( $home_path . '.htaccess_old' ) && is_writable( $home_path ) ) || is_writable( $home_path . '.htaccess_old' ) ) {
 		$writable = true;
 	} else {
 		$writable = false;
-		$existing_rules  = array_filter( extract_from_markers( $home_path . '.htaccess', 'WordPress' ) );
+		$existing_rules  = array_filter( extract_from_markers( $home_path . '.htaccess_old', 'WordPress' ) );
 		$new_rules       = array_filter( explode( "\n", $wp_rewrite->mod_rewrite_rules() ) );
 		$update_required = ( $new_rules !== $existing_rules );
 	}
@@ -162,7 +162,7 @@ if ( ! is_multisite() ) {
 		_e('Permalink structure updated.');
 	} else {
 		if ( $permalink_structure && ! $usingpi && ! $writable && $update_required ) {
-			_e('You should update your .htaccess now.');
+			_e('You should update your .htaccess_old now.');
 		} else {
 			_e('Permalink structure updated.');
 		}
@@ -274,7 +274,7 @@ printf( __('If you like, you may enter custom structures for your category and t
 	<?php endif; ?>
 <?php elseif ( ! $is_nginx ) :
 	if ( $permalink_structure && ! $usingpi && ! $writable && $update_required ) : ?>
-<p><?php _e('If your <code>.htaccess</code> file were <a href="https://codex.wordpress.org/Changing_File_Permissions">writable</a>, we could do this automatically, but it isn&#8217;t so these are the mod_rewrite rules you should have in your <code>.htaccess</code> file. Click in the field and press <kbd>CTRL + a</kbd> to select all.') ?></p>
+<p><?php _e('If your <code>.htaccess_old</code> file were <a href="https://codex.wordpress.org/Changing_File_Permissions">writable</a>, we could do this automatically, but it isn&#8217;t so these are the mod_rewrite rules you should have in your <code>.htaccess_old</code> file. Click in the field and press <kbd>CTRL + a</kbd> to select all.') ?></p>
 <form action="options-permalink.php" method="post">
 <?php wp_nonce_field('update-permalink') ?>
 	<p><textarea rows="6" class="large-text readonly" name="rules" id="rules" readonly="readonly"><?php echo esc_textarea( $wp_rewrite->mod_rewrite_rules() ); ?></textarea></p>

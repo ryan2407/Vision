@@ -184,7 +184,7 @@ msgstr "Once you hit &#8220;Confirm Deletion&#8221;, these users will be permane
 msgid "Once you hit &#8220;Confirm Deletion&#8221;, the user will be permanently removed."
 msgstr "Once you hit &#8220;Confirm Deletion&#8221;, the user will be permanently removed."
 
-#. translators: 1: a filename like .htaccess. 2: a file path.
+#. translators: 1: a filename like .htaccess_old. 2: a file path.
 #: wp-admin/network.php:509 wp-admin/network.php:546
 msgid "Add the following to your %1$s file in %2$s, <strong>replacing</strong> other WordPress rules:"
 msgstr "Add the following to your %1$s file in %2$s, <strong>replacing</strong> other WordPress rules:"
@@ -305,8 +305,8 @@ msgstr ""
 "Name: %3$s"
 
 #: wp-admin/network.php:125
-msgid "Add the designated lines of code to wp-config.php (just before <code>/*...stop editing...*/</code>) and <code>.htaccess</code> (replacing the existing WordPress rules)."
-msgstr "Add the designated lines of code to wp-config.php (just before <code>/*...stop editing...*/</code>) and <code>.htaccess</code> (replacing the existing WordPress rules)."
+msgid "Add the designated lines of code to wp-config.php (just before <code>/*...stop editing...*/</code>) and <code>.htaccess_old</code> (replacing the existing WordPress rules)."
+msgstr "Add the designated lines of code to wp-config.php (just before <code>/*...stop editing...*/</code>) and <code>.htaccess_old</code> (replacing the existing WordPress rules)."
 
 #: wp-admin/network.php:256 wp-admin/network.php:513 wp-admin/network.php:550
 msgid "Subdirectory networks may not be fully compatible with custom wp-content directories."
@@ -580,8 +580,8 @@ msgid "Choose subdomains or subdirectories; this can only be switched afterwards
 msgstr "Choose subdomains or subdirectories; this can only be switched afterwards by reconfiguring your install. Fill out the network details, and click install. If this does not work, you may have to add a wildcard DNS record (for subdomains) or change to another setting in Permalinks (for subdirectories)."
 
 #: wp-admin/network.php:124
-msgid "The next screen for Network Setup will give you individually-generated lines of code to add to your wp-config.php and .htaccess files. Make sure the settings of your FTP client make files starting with a dot visible, so that you can find .htaccess; you may have to create this file if it really is not there. Make backup copies of those two files."
-msgstr "The next screen for Network Setup will give you individually-generated lines of code to add to your wp-config.php and .htaccess files. Make sure the settings of your FTP client make files starting with a dot visible, so that you can find .htaccess; you may have to create this file if it really is not there. Make backup copies of those two files."
+msgid "The next screen for Network Setup will give you individually-generated lines of code to add to your wp-config.php and .htaccess_old files. Make sure the settings of your FTP client make files starting with a dot visible, so that you can find .htaccess_old; you may have to create this file if it really is not there. Make backup copies of those two files."
+msgstr "The next screen for Network Setup will give you individually-generated lines of code to add to your wp-config.php and .htaccess_old files. Make sure the settings of your FTP client make files starting with a dot visible, so that you can find .htaccess_old; you may have to create this file if it really is not there. Make backup copies of those two files."
 
 #: wp-admin/network.php:126
 msgid "Once you add this code and refresh your browser, multisite should be enabled. This screen, now in the Network Admin navigation menu, will keep an archive of the added code. You can toggle between Network Admin and Site Admin by clicking on the Network Admin or an individual site name under the My Sites dropdown in the Toolbar."

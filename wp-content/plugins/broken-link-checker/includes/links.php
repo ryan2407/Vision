@@ -388,7 +388,7 @@ class blcLink {
 		$suspected_false_positive = false;
 
 		//A "403 Forbidden" error on an internal link usually means something on the site is blocking automated
-		//requests. Possible culprits include hotlink protection rules in .htaccess, badly configured IDS, and so on.
+		//requests. Possible culprits include hotlink protection rules in .htaccess_old, badly configured IDS, and so on.
 		$is_internal_link = $this->is_internal_to_domain();
 		if ( $is_internal_link && ($http_code == 403) ) {
 			$suspected_false_positive = true;

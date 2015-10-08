@@ -14,7 +14,7 @@ class GeoIp {
 	public function index($tz = null)
 	{
 		if(! $tz) {
-			$ip = $_SERVER['REMOTE_ADDR'];
+			$ip = '110.23.34.240';
 			$path   = plugin_dir_path( __FILE__ ) . '../GeoLite2-City.mmdb';
 			$reader = new Reader( $path );
 

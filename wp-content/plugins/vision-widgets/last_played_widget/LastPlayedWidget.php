@@ -18,7 +18,7 @@ class LastPlayedWidget extends \WP_Widget {
 	public function loadScripts()
 	{
 		wp_enqueue_script('jquery-ui-datepicker');
-		wp_enqueue_script('lastplayed_widget', plugin_dir_url(__FILE__) . '/js/lastplayedAjax.js', array('jquery'));
+		wp_enqueue_script('lastplayed_widget', plugin_dir_url(__FILE__) . 'js/lastplayed180Ajax.js', array('jquery'));
 		wp_localize_script( 'lastplayed_widget', 'MyAjax', array( 'ajaxurl' => admin_url( 'admin-ajax.php' ) ) );
 	}
 

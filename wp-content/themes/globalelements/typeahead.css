@@ -1,0 +1,11 @@
+.twitter-typeahead {
+    width: 80%; z-index: 10000 !important;
+    font-size: 14px;
+}
+.twitter-typeahead, .twitter-typeahead .tt-hint { width: 100%; margin: 0px; outline: none; }
+.twitter-typeahead .tt-hint { color: #999; }
+.twitter-typeahead .tt-dropdown-menu { width: 100%; padding: 0; background-color: #fff; z-index: 10000 !important; }
+.twitter-typeahead .tt-dropdown-menu .tt-suggestion { text-align: left; padding: 3px 20px; font-size: 14px; line-height: 24px; border-bottom: 1px solid #ccc; }
+.twitter-typeahead .tt-dropdown-menu .tt-suggestion:last-child { border-bottom: none; }
+.twitter-typeahead .tt-dropdown-menu .tt-suggestion.tt-cursor { color: #fff; background-color: #ccc; }
+.twitter-typeahead .tt-dropdown-menu .tt-suggestion em { font-weight: bold; font-style: normal; }

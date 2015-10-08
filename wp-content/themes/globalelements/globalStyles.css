@@ -1,0 +1,31 @@
+div.selector {
+	display: none;
+}
+
+span.gfield_select {
+	display: none;
+}
+
+div.ui-select span {
+	display: none;
+}
+
+div.ui-radio {
+	padding-left: 2px;
+}
+
+div.footer div.wrapper {
+	float: left;
+	width: 30%;
+	background: none !important;
+}
+
+div.footer div.wrapper > li > a {
+	font-size: 18px;
+	margin-bottom: 10px;
+	color: #fff;
+}
+
+div.footer div.wrapper > li {
+	margin-bottom: 20px;
+}

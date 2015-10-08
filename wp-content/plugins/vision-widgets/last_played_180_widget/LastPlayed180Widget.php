@@ -12,13 +12,13 @@ class LastPlayed180Widget extends \WP_Widget {
 		add_action('wp_enqueue_scripts', array($this, 'loadScripts'));
 		add_action( 'wp_ajax_nopriv_lastplayed180', array($this, 'LastPlayed'));
 		add_action( 'wp_ajax_lastplayed180', array($this, 'LastPlayed'));
-		add_shortcode( 'lastplayed180', array($this, 'ShortCode180') );
+		add_shortcode( 'lastplayed180', array($this, 'ShortCode') );
 	}
 
 	public function loadScripts()
 	{
 		wp_enqueue_script('jquery-ui-datepicker');
-		wp_enqueue_script('lastplayed_180_widget', plugin_dir_url(__FILE__) . '/js/lastplayed180Ajax.js', array('jquery'));
+		wp_enqueue_script('lastplayed_180_widget', plugin_dir_url(__FILE__) . '/js/lastplayedAjax.js', array('jquery'));
 		wp_localize_script( 'lastplayed_180_widget', 'MyAjax', array( 'ajaxurl' => admin_url( 'admin-ajax.php' ) ) );
 	}
 
@@ -84,7 +84,7 @@ class LastPlayed180Widget extends \WP_Widget {
 		echo $args['after_widget'];
 	}
 	
-	public function ShortCode180()
+	public function ShortCode()
 	{
 		wp_enqueue_style('jquery-ui', plugins_url('datepicker.css', __FILE__));
 		wp_enqueue_style('shortcode-ui', plugins_url('shortcode_styles.css', __FILE__));

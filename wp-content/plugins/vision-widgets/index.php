@@ -21,7 +21,6 @@ require plugin_dir_path(__FILE__).'last_played_widget/LastPlayedWidget.php';
 require plugin_dir_path(__FILE__).'last_played_180_widget/LastPlayed180Widget.php';
 require plugin_dir_path(__FILE__).'promo-widget/PromoWidget.php';
 require plugin_dir_path(__FILE__).'epg-widget/EpgWidget.php';
-require plugin_dir_path(__FILE__).'180_top_songs_widget/TopSongsWidget180.php';
 
 class VisionMediaWidgets {
 
@@ -36,7 +35,6 @@ class VisionMediaWidgets {
 			register_widget( 'VisionMedia\LastPlayed180Widget\LastPlayed180Widget' );
 			register_widget( 'VisionMedia\PromoWidget\PromoWidget' );
 			register_widget( 'VisionMedia\EpgWidget\EpgWidget' );
-			register_widget( 'VisionMedia\TopSongsWidget180\TopSongsWidget180' );
 		});
 
 	}

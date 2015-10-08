@@ -1,0 +1,1 @@
+<?php include_once(get_theme_root().'/globalelements/footer.php'); ?>

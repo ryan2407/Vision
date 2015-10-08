@@ -1,0 +1,96 @@
+body {
+  line-height: 1;
+  font: 13px/1.5em "ProximaNova";
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+  line-height: 1.2;
+}
+h1 {
+  font-size: 218%;
+}
+h2 {
+  font-size: 164%;
+}
+h3 {
+  font-size: 145%;
+}
+h4 {
+  font-size: 118%;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+a:hover {
+  text-decoration: underline;
+}
+strong {
+  font-family: 'ProximaNova-Black';
+}
+@font-face {
+  font-family: 'ProximaNova-Black';
+  src: url('fonts/ProximaNova/ProximaNova-Black.eot');
+}
+@font-face {
+  font-family: 'ProximaNova-Black';
+  src: url('fonts/ProximaNova/ProximaNova-Black.woff') format('woff'), url('fonts/ProximaNova/ProximaNova-Black.svg#ProximaNova-Black') format('svg');
+}
+@font-face {
+  font-family: 'ProximaNova';
+  src: url('fonts/ProximaNova/ProximaNova-Regular.eot');
+}
+@font-face {
+  font-family: 'ProximaNova';
+  src: url('fonts/ProximaNova/ProximaNova-Regular.woff') format('woff'), url('fonts/ProximaNova/ProximaNova-Regular.svg#ProximaNova-Regular') format('svg');
+}
+
+table {
+	width: 100%
+}
+
+table tr:nth-child(3n) {
+	background: #fff;
+}
+
+table tr:first-child {
+	background: #fff;
+}
+
+.alignleft {
+	margin: 0px;
+}
+
+table td {
+	padding: 0px;
+}
+
+ul {
+	margin-bottom: 15px;
+}
+
+ul li {
+	list-style-type: disc;
+	margin-left: 15px;
+}
+
+ol li {
+	list-style-type: decimal;
+	margin-left: 15px;
+}
+
+ol {
+	margin-bottom: 15px;
+}
+
+hr {
+	background: #ccc;
+	border: none;
+	width: 100%;
+	height: 1px;
+}

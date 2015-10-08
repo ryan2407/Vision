@@ -1,3 +1,4 @@
 .DS_STORE
 .vagrant
 wp-config-local.php
+.idea/workspace.xml

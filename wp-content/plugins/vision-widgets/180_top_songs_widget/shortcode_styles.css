@@ -9,6 +9,10 @@ div.song div.artwork {
     margin-right: 20px;
 }
 
+div.song {
+	
+}
+
 div.song div.songInfo {
     float: left;
 }
